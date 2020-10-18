@@ -10,7 +10,6 @@ export default function Linkform({refreshLinks}) {
         setDescription('');
         setUrl('');
     }
-
     const handleSubmit = async(e) => {
         e.preventDefault();
         const body = {name, url, description};
