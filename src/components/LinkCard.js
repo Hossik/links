@@ -4,7 +4,7 @@ export default function LinkCard({link, refreshLinks}) {
     const archiveLink = async () => {
         link.archived =true;
         try{
-            await fetch('/.netlify/functions/updateLink', {
+            await fetch('/functions/updateLink', {
                 method: 'PUT',
                 body: JSON.stringify(link)
             });
@@ -17,7 +17,7 @@ export default function LinkCard({link, refreshLinks}) {
     const deleteLink = async () => {
         const id = link._id;
         try{
-            await fetch('/.netlify/functions/deleteLink', {
+            await fetch('/functions/deleteLink', {
                 method: 'DELETE',
                 body: JSON.stringify({id})
             });
