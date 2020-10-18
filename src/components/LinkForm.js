@@ -4,7 +4,6 @@ export default function Linkform({refreshLinks}) {
     const [name, setName] = useState('');
     const [url, setUrl] = useState('');
     const [description, setDescription] = useState('');
-
     const resetForm = () => {
         setName('');
         setDescription('');
