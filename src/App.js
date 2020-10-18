@@ -27,7 +27,6 @@ function App() {
        <LinkList links={links} refreshLinks={loadLinks}/>
     </div>
   );
-
 }
 
 export default App;
