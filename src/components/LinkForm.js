@@ -1,5 +1,4 @@
 import React,{useState} from 'react'
-
 export default function Linkform({refreshLinks}) {
     const [name, setName] = useState('');
     const [url, setUrl] = useState('');
