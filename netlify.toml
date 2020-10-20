@@ -6,4 +6,4 @@
     status = 200
 
 [template.environment]
-  FAUNADB_SECRET = "fnAD4YLwRdACARSTvBfEbd3UOO4LOyxSI-FsCnFU"
+  FAUNA_SECRET_KEY="fnAD4YLwRdACARSTvBfEbd3UOO4LOyxSI-FsCnFU"
