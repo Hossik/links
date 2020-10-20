@@ -11,6 +11,6 @@ exports.handler = async (event) => {
 data);
   } catch (err) {
       console.error(err);
-      return formattedResponse(500, {err: 'Something went wrong'})
+      return formattedResponse(500, {err: 'getLINK went wrong'})
     }
   }
