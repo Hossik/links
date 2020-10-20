@@ -4,3 +4,6 @@
     from = "api/*"
     to= ".netlify/functions/:splat"
     status = 200
+
+[template.environment]
+  FAUNADB_SECRET = "fnAD4YLwRdACARSTvBfEbd3UOO4LOyxSI-FsCnFU"
