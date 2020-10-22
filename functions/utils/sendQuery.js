@@ -2,22 +2,20 @@ const axios = require('axios');
 require('dotenv').config();
 
 module.exports = async (query, variables) => {
-    const {
-        data: { data, errors },
-    } = await axios({
+    const {data: {data, errors}} = await axios({
         url: 'https://graphql.fauna.com/graphql',
         method: 'POST',
         headers: {
-            Authorization: `Bearer fnAD4YLwRdACARSTvBfEbd3UOO4LOyxSI-FsCnFU`,
+            Authorization: `Bearer ${process.env.FAUNA_SECRET_KEY}`
         },
         data: {
             query,
-            variables,
-        },
+            variables, 
+        }
     });
-    if (errors) {
+    if(errors) {
         console.error(errors);
-        throw new Error('Something went wrong');
+        throw new Error('sendQuery went wrong')
     }
     return data;
-};
+}
