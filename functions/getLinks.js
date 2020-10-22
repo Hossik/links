@@ -9,6 +9,7 @@ exports.handler = async (event) => {
     const data = res.allLinks.data;
     return formattedResponse(200,
 data);
+
   } catch (err) {
       console.error(err);
       return formattedResponse(500, {err: 'getLINK went wrong'})
